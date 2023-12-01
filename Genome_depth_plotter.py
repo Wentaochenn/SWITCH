@@ -1,4 +1,4 @@
-## Author: Wentao Chen
+# Author: Wentao Chen
 import argparse
 import os
 import numpy as np
