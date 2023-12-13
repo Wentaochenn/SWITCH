@@ -1,4 +1,4 @@
-# SWITCH: Advanced Whole-Genome Amplification for Chlamydia trachomatis
+# SWITCH: a robust and selective whole-genome amplification tool for Chlamydia trachomatis
 
 SWITCH is a excellent tool designed for robust and selective whole-genome amplification, advancing molecular surveillance of Chlamydia trachomatis.
 
