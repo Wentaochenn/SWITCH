@@ -60,8 +60,7 @@ rule trim_illumina_Adaptors_fastqs:
         out_r2_unpaired="3.trimmed_reads/{samp}_R2.UNPAIREDtrimmomatictrimmed.fq"
     shell:
         """
-        # Use -phred64 for simulated reads, -phred33 for NovaSeq 
-        trimmomatic PE -phred64 {input.r1} {input.r2} {output.out_r1_paired} {output.out_r1_unpaired} {output.out_r2_paired} {output.out_r2_unpaired} ILLUMINACLIP:/mnt/dfc_data1/home/chenwentao/anaconda2/envs/kraken2/share/trimmomatic/adapters/TruSeq3-PE.fa:2:30:10:2:True LEADING:3 TRAILING:3 MINLEN:36
+        trimmomatic PE {input.r1} {input.r2} {output.out_r1_paired} {output.out_r1_unpaired} {output.out_r2_paired} {output.out_r2_unpaired} ILLUMINACLIP:/mnt/dfc_data1/home/chenwentao/anaconda2/envs/kraken2/share/trimmomatic/adapters/TruSeq3-PE.fa:2:30:10:2:True LEADING:3 TRAILING:3 MINLEN:36
         """ 
 
 rule seqtk_downsample:
